@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Jasen Harper</title>
+
+        <!-- Add this to <head> -->
+
+        <!-- Load required Bootstrap and BootstrapVue CSS -->
+        <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
+        <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.css" />
+
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+        <!-- Load polyfills to support older browsers -->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es2015%2CIntersectionObserver" crossorigin="anonymous"></script>
+
+        <!-- Load Vue followed by BootstrapVue -->
+        <script src="https://unpkg.com/vue@latest/dist/vue.min.js"></script>
+        <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
+
+        <!-- Load the following for BootstrapVueIcons support -->
+        <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue-icons.min.js"></script>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+
+        <link type="text/css" rel="stylesheet" href="./styles/main-style.css">
+
+        <script type="module" src="./src/loader.js"></script>
+    </head>
+
+    <body>
+        <div id="root">
+        <header>
+            <!-- https://filosophy.org/code/using-html5-canvas-to-make-a-generative-background/ -->
+            <canvas width="800" height="400"></canvas>
+            <b-container id="header-b-container" fluid>
+                <b-row>
+                    <b-col>
+                        <b-button variant="outline-primary" href="./index.html">Home</b-button>
+                        <b-button variant="outline-primary" href="./pages/about.html">About</b-button>
+                        <b-button variant="outline-primary" href="./media/JasenLeeHarperResume.pdf">Resume</b-button>
+                        <!-- <b-button variant="outline-primary" href="./pages/contact.html">Contact</b-button> -->
+                    </b-col>
+                    <b-col id="draw-controls" class="d-flex justify-content-end">
+                        <label for=“drawSwitch”>Play Animation</label>
+                        <b-form-checkbox id=“drawSwitch” v-model="drawToggle" name="drawSwitch" switch @change="draw"></b-form-checkbox>
+                        <b-button variant="outline-light" @click="resetCanvas" size="sm" pill>Reset Animation</b-button>
+                    </b-col>
+                </b-row>
+                <!-- <b-row class="title-info"> <a href="./index.html"><img src="./media/jlhgdwoo.png" alt="Jasen Lee Harper Game Dev" width="150px"></a> </b-row> -->
+                <b-row> <a href="../index.html" id="title-name"><h1>Jasen Harper</h1></a> </b-row>
+                <b-row class="title-info"> <h2>Game/Software Designer and Developer</h2> </b-row>
+            </b-container>
+        </header>
+
+        <main>
+            <b-container>
+                <b-row>
+                    <b-col class="b-col">
+                        <section id="about">
+                            <h3>About</h3>
+                            <p>I am a fourth year Game Design and Development student at the Rochtester Institute of Technology.</p>
+                        </section>
+                    </b-col>
+                </b-row>
+
+                <b-row>
+                    <b-col class="b-col">
+                        <section id="project1">
+                            <h3>Fantasy Character Generator</h3>
+                            <img src="./media/fantasy-generator-example.png" alt="Fantasy Character Generator Example">
+                            <p>Character generator for fantasy RPGs and stories.</p>
+                            <a href="https://github.com/JLHGD/FantasyCharGen">Github</a>
+                        </section>
+                    </b-col>
+
+                    <b-col class="b-col">
+                        <section id="project2">
+                            <h3>Pacifist Boulder Run</h3>
+                            <img src="./media/pacifist-boulder-run-example.png" alt="Pacifist Boulder Run Example">
+                            <p>Simple game made with Pixi.js, with physics coded by me.</p>
+                            <a href="https://people.rit.edu/jlh4592/235/HTMLProject3/">Project Page</a>
+                        </section>
+                    </b-col>
+                </b-row>
+
+                <b-row>
+                    <b-col class="b-col">
+                        <section id="project3">
+                            <h3>TCG Card Generator</h3>
+                            <img src="./media/card-generator-example.png" alt="Trading Card Game Card Generator Example">
+                            <p>Generator for creating simple and generic cards for idea generation for trading card games.</p>
+                            <a href="https://people.rit.edu/jlh4592/330/Proj3/">Project Page</a>
+                        </section>
+                    </b-col>
+
+                    <b-col class="b-col">
+                        <section id="project4">
+                            <h3>The Warlock's Pact</h3>
+                            <iframe width="480" height="270"src="https://youtube.com/embed/wYjEfz790xU"></iframe>
+                            <p>Short horror game loosely based off of The Dresden Files. Made with a small team for a Game Design course.</p>
+                            <!-- <a href="">Github</a> -->
+                        </section>
+                    </b-col>
+                </b-row>
+            </b-container>
+        </main>
+
+        <footer>
+            <h4>Site by Jasen Harper</h4>
+            <h4>Links:</h4>
+            <a href="https://github.com/JLHGD">Github</a>
+            <a href="https://jlhgd.artstation.com/">Artstation</a>
+            <a href="https://people.rit.edu/jlh4592/">RIT Directory / Projects</a>
+        </footer>
+        </div>
+
+    </body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>About - Jasen Harper</title>
+
+        <!-- Add this to <head> -->
+
+        <!-- Load required Bootstrap and BootstrapVue CSS -->
+        <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
+        <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.css" />
+
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+        <!-- Load polyfills to support older browsers -->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es2015%2CIntersectionObserver" crossorigin="anonymous"></script>
+
+        <!-- Load Vue followed by BootstrapVue -->
+        <script src="https://unpkg.com/vue@latest/dist/vue.min.js"></script>
+        <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
+
+        <!-- Load the following for BootstrapVueIcons support -->
+        <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue-icons.min.js"></script>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+        <link type="text/css" rel="stylesheet" href="../styles/about-style.css">
+
+        <script type="module" src="../src/about-loader.js"></script>
+    </head>
+
+    <body>
+        <div id="root">
+        <header>
+            <b-container id="header-b-container" fluid>
+                <b-row>
+                <b-col>
+                    <b-button variant="primary" href="../index.html">Home</b-button>
+                    <b-button variant="primary" href="./about.html">About</b-button>
+                    <b-button variant="primary" href="./resume.html">Resume</b-button>
+                    <!-- <b-button variant="outline-primary" href="./contact.html">Contact</b-button> -->
+                </b-col>
+                </b-row>
+                <!-- <b-row> <a href="../index.html"><img src="../media/jlhgdwoo.png" alt="Jasen Lee Harper Game Dev" width="150px"></a> </b-row> -->
+                <b-row> <a href="../index.html" id="title-name"><h1>Jasen Harper</h1></a> </b-row>
+                <!-- <b-row class="title-info"> <h2>About</h2> </b-row> -->
+            </b-container>
+        </header>
+
+        <main>
+            <b-container>
+            <b-row>
+                <b-col>
+                    <img src="../media/PortfolioPortrait.png" alt="Sketch of Jasen Harper" id="portrait">
+                </b-col>
+                <b-col id="about-info">
+                    <h2>About</h2>
+                    <p>I'm currently a 4th year Game Design and Development major at
+                        the Rochester Institute of Technology. I work with a variety of game
+                        engines like Godot, Unity, and Unreal. In terms of languages, I
+                        have experience in Javascript, Java, Python, C#, and C++.</p>
+                        <hr>
+                    <p>Outside of programming and designing for games, I also make websites,
+                        like this one. HTML, CSS, Javascript, and Vue are all tools that
+                        I regularly use now, especially when I want to get a quick little
+                        personal project done that doesn't require a full game engine.</p>
+                        <hr>
+                    <p>Past working on stuff, I like to create and experience many forms
+                        of art, whether it be written or painted. I like to mess around in
+                        Blender or in a Google Doc when not just playing video games or
+                        helping my family.</p>
+                </b-col>
+            </b-row>
+            </b-container>
+        </main>
+
+        <footer>
+            <h4>Site by Jasen Harper</h4>
+            <h4>Links:</h4>
+            <a href="https://github.com/JLHGD">Github</a>
+            <a href="https://jlhgd.artstation.com/">Artstation</a>
+            <a href="https://people.rit.edu/jlh4592/">RIT Directory / Projects</a>
+        </footer>
+        </div>
+    </body>
+
+</html>

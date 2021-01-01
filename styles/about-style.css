@@ -1,0 +1,140 @@
+/* Body Bachground */
+body{
+    background: #FFF;
+    color: #000;
+    /* https://www.sitepoint.com/community/t/100vw-and-scrollbars/196480/4 */
+    overflow-x: hidden;
+}
+/* Body Bachground */
+
+
+
+/* Main Background */
+main{
+    background: #FFF;
+    width: 100vw;
+    margin-top: 0;
+}
+/* Main Background */
+
+
+
+/* Header Img (Logo) */
+.b-col{
+    margin-top: 50px;
+}
+.b-col img{
+    width: 75%;
+}
+img{
+    display: block;
+}
+/* Header Img (Logo) */
+
+
+
+/* Canvas and Canvas Controls */
+header{
+    height: 300px;
+}
+#draw-controls{
+    color: #DDD;
+}
+canvas{
+    position: fixed;
+    width: 100vw;
+    height: 300px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/* Canvas and Canvas Controls */
+
+
+
+/* Info Title / Sub Title */
+.title-info{
+    margin: 0;
+    margin-top: 25px;
+    color: black;
+}
+/* Info Title / Sub Title */
+
+
+
+/* Jasen Harper Title Link */
+#title-name{
+    margin-top: 25px;
+    color: black;
+    padding: 20px;
+    font-size: 50px;
+}
+#title-name h1{
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+#title-name:link {
+    text-decoration: none;
+}
+#title-name:visited {
+    text-decoration: none;
+}
+#title-name:hover {
+    text-decoration: none;
+}
+#title-name:active {
+    text-decoration: none;
+}
+/* Jasen Harper Title Link */
+
+
+
+/* Header Grid Container */
+#header-b-container{
+    margin: 0;
+    padding: 20px;
+}
+/* Header Grid Container */
+
+
+
+/* Main Info */
+#portrait{
+    width: 20vw;
+    min-width: 300px;
+    height: auto;
+}
+#about-info p{
+    font-size: 20px;
+}
+/* Main Info */
+
+
+
+/* Footer */
+footer{
+    padding: 20px;
+}
+/* Footer */
+
+
+
+/* Media Queries */
+@media only screen and (max-width: 800px) {
+    body {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #portrait{
+        width: 75vw;
+        max-width: 550px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .b-col{
+        margin: 50px;
+    }
+}
+/* Media Queries */
