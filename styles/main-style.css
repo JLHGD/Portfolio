@@ -26,6 +26,10 @@ main{
     /* border: 3px solid #999; */
     /* border-radius: 10px;
     background: #DDD; */
+    background: #DDD;
+    outline: 1px solid gray;
+    border-radius: 5px;
+    margin: 5px;
     margin-top: 50px;
 }
 .b-col img{
@@ -35,10 +39,6 @@ img{
     display: block;
 }
 /* Header Img (Logo) */
-
-.b-container {
-    outline: solid;
-}
 
 
 
