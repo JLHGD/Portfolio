@@ -13,7 +13,7 @@ body{
 
 /* Main Background */
 main{
-    background: #FFF;
+    background: #DDD;
     width: 100vw;
     margin-top: 0;
 }
@@ -26,7 +26,7 @@ main{
     /* border: 3px solid #999; */
     /* border-radius: 10px;
     background: #DDD; */
-    background: #DDD;
+    background: #FFF;;
     outline: 1px solid gray;
     border-radius: 5px;
     margin: 5px;
