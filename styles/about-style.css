@@ -99,11 +99,11 @@ canvas{
 
 
 /* Main Info */
-#portrait{
+/*#portrait{
     width: 20vw;
     min-width: 300px;
     height: auto;
-}
+}*/
 #about-info p{
     font-size: 20px;
 }
@@ -126,11 +126,11 @@ footer{
         margin-left: auto;
         margin-right: auto;
     }
-    #portrait{
+/*    #portrait{
         width: 75vw;
         max-width: 550px;
         height: auto;
-    }
+    }*/
 }
 
 @media only screen and (max-width: 450px) {
